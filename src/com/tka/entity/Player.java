@@ -1,41 +1,31 @@
 package com.tka.entity;
 
 public class Player {
-	private int p_id;
-	private int jn;
-	private String p_name;
+	private int j_n;
+	private String p_name; 
 	private int runs;
-	private int wickets;
+	private int wicket;
 	private String team;
 	
 	public Player() {
-		// TODO Auto-generated constructor stub
+		
 	}
 
-	public Player(int p_id, int jn, String p_name, int runs, int wickets, String team) {
+	public Player(int j_n, String p_name, int runs, int wicket, String team) {
 		super();
-		this.p_id = p_id;
-		this.jn = jn;
+		this.j_n = j_n;
 		this.p_name = p_name;
 		this.runs = runs;
-		this.wickets = wickets;
+		this.wicket = wicket;
 		this.team = team;
 	}
 
-	public int getP_id() {
-		return p_id;
+	public int getJ_n() {
+		return j_n;
 	}
 
-	public void setP_id(int p_id) {
-		this.p_id = p_id;
-	}
-
-	public int getJn() {
-		return jn;
-	}
-
-	public void setJn(int jn) {
-		this.jn = jn;
+	public void setJ_n(int j_n) {
+		this.j_n = j_n;
 	}
 
 	public String getP_name() {
@@ -54,12 +44,12 @@ public class Player {
 		this.runs = runs;
 	}
 
-	public int getWickets() {
-		return wickets;
+	public int getWicket() {
+		return wicket;
 	}
 
-	public void setWickets(int wickets) {
-		this.wickets = wickets;
+	public void setWicket(int wicket) {
+		this.wicket = wicket;
 	}
 
 	public String getTeam() {
@@ -72,7 +62,7 @@ public class Player {
 
 	@Override
 	public String toString() {
-		return "Player [p_id=" + p_id + ", jn=" + jn + ", p_name=" + p_name + "]";
+		return "Player [j_n=" + j_n + ", p_name=" + p_name + "]";
 	}
 	
 }
